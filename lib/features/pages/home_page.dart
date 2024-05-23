@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:neobis_flutter_figma/widgets/home_page/action_button.dart';
-import 'package:neobis_flutter_figma/widgets/home_page/bottom_nav_bar.dart';
-import 'package:neobis_flutter_figma/widgets/home_page/grid_view_card.dart';
-import 'package:neobis_flutter_figma/widgets/home_page/elevated_button.dart';
-import 'package:neobis_flutter_figma/widgets/home_page/info_card.dart';
-import 'package:neobis_flutter_figma/widgets/home_page/top_button.dart';
+import 'package:neobis_flutter_figma/widgets/first_page/action_button.dart';
+import 'package:neobis_flutter_figma/widgets/first_page/bottom_nav_bar.dart';
+import 'package:neobis_flutter_figma/widgets/first_page/grid_view_card.dart';
+import 'package:neobis_flutter_figma/widgets/first_page/elevated_button.dart';
+import 'package:neobis_flutter_figma/widgets/first_page/info_card.dart';
+import 'package:neobis_flutter_figma/widgets/first_page/top_button.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

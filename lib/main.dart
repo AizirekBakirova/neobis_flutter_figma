@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:neobis_flutter_figma/features/pages/home_page.dart';
+import 'package:neobis_flutter_figma/features/pages/second_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomePage(),
+      home: SecondPage(),
     );
   }
 }
