@@ -7,18 +7,43 @@ class CardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.builder(
-          itemCount: 10,
+          itemCount: 5,
           itemBuilder: (context, index) {
-            return const ProductCard();
+            return ProductCard(
+              image: 'assets/tshirt.jpg',
+            );
           }),
     );
+    // SingleChildScrollView(
+    //   child: Column(
+    //     children: [
+    //       ProductCard(
+    //         image: 'assets/tshirt.jpg',
+    //       ),
+    //       ProductCard(
+    //         image: 'assets/tshirt2.webp',
+    //       ),
+    //       ProductCard(
+    //         image: 'assets/tshirt3.jpeg',
+    //       ),
+    //       ProductCard(
+    //         image: 'assets/tshirt4.avif',
+    //       ),
+    //       ProductCard(
+    //         image: 'assets/tshirt5.avif',
+    //       ),
+    //     ],
+    //   ),
+    // );
   }
 }
 
 class ProductCard extends StatelessWidget {
   const ProductCard({
     super.key,
+    required this.image,
   });
+  final String image;
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +66,15 @@ class ProductCard extends StatelessWidget {
             const SizedBox(height: 10),
             Row(
               children: [
-                Image.asset('assets/images/tshirt.jpg'),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Image.asset(
+                    image,
+                    width: 60,
+                    height: 60,
+                    fit: BoxFit.cover,
+                  ),
+                ),
                 const SizedBox(width: 10),
                 const Expanded(
                   child: Column(
