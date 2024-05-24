@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:neobis_flutter_figma/features/pages/category_page.dart.dart';
 import 'package:neobis_flutter_figma/widgets/first_page/action_button.dart';
 import 'package:neobis_flutter_figma/widgets/first_page/bottom_nav_bar.dart';
 import 'package:neobis_flutter_figma/widgets/first_page/grid_view_card.dart';
