@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:neobis_flutter_figma/features/data/category_models.dart';
 
 class CardWidget extends StatelessWidget {
   const CardWidget({super.key});
@@ -7,10 +8,10 @@ class CardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.builder(
-          itemCount: 5,
+          itemCount: categoriesList.length,
           itemBuilder: (context, index) {
             return ProductCard(
-              image: 'assets/tshirt.jpg',
+              image: categoriesList[index].images,
             );
           }),
     );
@@ -46,7 +47,9 @@ class ProductCard extends StatelessWidget {
   final String image;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     return Card(
       margin: const EdgeInsets.symmetric(vertical: 10),
       child: Padding(
