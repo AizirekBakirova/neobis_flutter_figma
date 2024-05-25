@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:neobis_flutter_figma/widgets/second_page/card_widget.dart';
 import 'package:neobis_flutter_figma/widgets/second_page/info_card2.dart';
 import 'package:neobis_flutter_figma/widgets/second_page/top_widget.dart';
+import 'package:neobis_flutter_figma/widgets/third_page/select_widget.dart';
 
-class CategoryPage2 extends StatelessWidget {
-  const CategoryPage2({super.key});
+class CategoryPage extends StatelessWidget {
+  const CategoryPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +14,11 @@ class CategoryPage2 extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.all(8.0),
           child: Column(
-            children: [TopWidget(), InfoCard2(), CardWidget()],
+            children: [
+              TopWidget(),
+              InfoCard2(),
+              CardWidget(),
+            ],
           ),
         ),
       ),
