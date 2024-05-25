@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:neobis_flutter_figma/widgets/third_page/bottom_widget.dart';
-import 'package:neobis_flutter_figma/widgets/third_page/chip_button.dart';
-import 'package:neobis_flutter_figma/widgets/third_page/detail_card.dart';
+import 'package:neobis_flutter_figma/widgets/detail_page/bottom_widget.dart';
+import 'package:neobis_flutter_figma/widgets/detail_page/chip_button.dart';
+import 'package:neobis_flutter_figma/widgets/detail_page/detail_card.dart';
 
 class DetailPage extends StatefulWidget {
   const DetailPage({super.key});
