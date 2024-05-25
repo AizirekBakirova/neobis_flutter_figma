@@ -23,7 +23,13 @@ class _DetailPageState extends State<DetailPage> {
             children: [
               Row(
                 children: [
-                  Icon(Icons.arrow_back_ios),
+                  InkWell(
+                      onTap: () {
+                        setState(() {
+                          Navigator.pop(context);
+                        });
+                      },
+                      child: Icon(Icons.arrow_back_ios)),
                   SizedBox(
                     width: 70,
                   ),

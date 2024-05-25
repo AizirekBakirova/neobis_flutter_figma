@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
-class TopWidget extends StatelessWidget {
+class TopWidget extends StatefulWidget {
   const TopWidget({super.key});
 
+  @override
+  State<TopWidget> createState() => _TopWidgetState();
+}
+
+class _TopWidgetState extends State<TopWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(

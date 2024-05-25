@@ -3,6 +3,7 @@ import 'package:neobis_flutter_figma/features/pages/category_page2.dart';
 import 'package:neobis_flutter_figma/features/pages/detail_page.dart';
 import 'package:neobis_flutter_figma/features/pages/home_page.dart';
 import 'package:neobis_flutter_figma/features/pages/payment_page.dart';
+import 'package:neobis_flutter_figma/widgets/home_page/bottom_nav_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: PaymentPage(),
+      home: BottomNavBarButton(),
     );
   }
 }

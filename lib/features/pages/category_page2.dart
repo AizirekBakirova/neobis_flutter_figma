@@ -2,14 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:neobis_flutter_figma/widgets/category_page/card_widget.dart';
 import 'package:neobis_flutter_figma/widgets/category_page/info_card2.dart';
 import 'package:neobis_flutter_figma/widgets/category_page/top_widget.dart';
-import 'package:neobis_flutter_figma/widgets/detail_page/select_widget.dart';
 
-class CategoryPage extends StatelessWidget {
+class CategoryPage extends StatefulWidget {
   const CategoryPage({super.key});
 
   @override
+  State<CategoryPage> createState() => _CategoryPageState();
+}
+
+class _CategoryPageState extends State<CategoryPage> {
+  @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.all(8.0),

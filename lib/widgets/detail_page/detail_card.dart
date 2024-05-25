@@ -32,7 +32,7 @@ class DetailCard extends StatelessWidget {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(10),
                     child: Image.asset(
-                      'assets/Image.jpg',
+                      'assets/tshirt.jpg',
                       width: 60,
                       height: 60,
                       fit: BoxFit.cover,
