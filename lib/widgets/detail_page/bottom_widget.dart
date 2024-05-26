@@ -11,14 +11,14 @@ class BottomWidget extends StatelessWidget {
       padding: const EdgeInsets.all(10),
       child: Column(
         children: [
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
                 'Итого',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
-              Text('100 402 P')
+              Text('100 402 ₽')
             ],
           ),
           Padding(
@@ -26,15 +26,15 @@ class BottomWidget extends StatelessWidget {
             child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     minimumSize: const Size(343, 56),
-                    backgroundColor: Color(0xffffdd2d),
+                    backgroundColor: const Color(0xffffdd2d),
                     padding: const EdgeInsets.symmetric(
                         horizontal: 25, vertical: 15),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10))),
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   'Продолжить',
-                  style: const TextStyle(color: Colors.black),
+                  style: TextStyle(color: Colors.black),
                 )),
           )
         ],

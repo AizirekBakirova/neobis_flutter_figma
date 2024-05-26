@@ -18,7 +18,7 @@ class DetailCard extends StatelessWidget {
                 color: Colors.grey.withOpacity(0.5),
                 spreadRadius: 5,
                 blurRadius: 7,
-                offset: Offset(-0, 3))
+                offset: const Offset(-0, 3))
           ],
           color: const Color.fromARGB(255, 255, 255, 255),
         ),
@@ -43,12 +43,12 @@ class DetailCard extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           'Off-white, Футболка из рельефной ткани',
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.w600),
                         ),
-                        SizedBox(height: 5),
+                        const SizedBox(height: 5),
                         Row(
                           children: [
                             Container(
@@ -56,56 +56,56 @@ class DetailCard extends StatelessWidget {
                               height: 8,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(5),
-                                  color: Color(0xff1DB469)),
+                                  color: const Color(0xff1DB469)),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
-                            Text('500 ₽',
+                            const Text('500 ₽',
                                 style: TextStyle(
                                     fontSize: 16, fontWeight: FontWeight.w400)),
-                            SizedBox(width: 10),
+                            const SizedBox(width: 10),
                             Container(
                               width: 8,
                               height: 8,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(5),
-                                  color: Color(0xff7F56F8)),
+                                  color: const Color(0xff7F56F8)),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
-                            Text('1 200 ₽',
+                            const Text('1 200 ₽',
                                 style: TextStyle(
                                     fontSize: 16, fontWeight: FontWeight.w400)),
-                            SizedBox(width: 60),
-                            Text(
+                            const SizedBox(width: 60),
+                            const Text(
                               '36 шт',
                               style: TextStyle(
                                   fontWeight: FontWeight.w700, fontSize: 16),
                             ),
                           ],
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                       ],
                     ),
                   ),
                 ],
               ),
-              Divider(),
-              _sizeWidget(
+              const Divider(),
+              const SizeWidget(
                 textSize: 'XS',
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
-              _sizeWidget(
+              const SizeWidget(
                 textSize: 'S',
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
-              _sizeWidget(
+              const SizeWidget(
                 textSize: 'S',
               ),
             ],
@@ -116,8 +116,8 @@ class DetailCard extends StatelessWidget {
   }
 }
 
-class _sizeWidget extends StatelessWidget {
-  const _sizeWidget({
+class SizeWidget extends StatelessWidget {
+  const SizeWidget({
     super.key,
     required this.textSize,
   });
@@ -135,12 +135,13 @@ class _sizeWidget extends StatelessWidget {
             children: [
               Text(
                 textSize,
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+                style:
+                    const TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
               ),
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Color(0xffEDF0F8),
+                  color: const Color(0xffEDF0F8),
                 ),
                 width: 150,
                 child: Padding(
@@ -152,12 +153,12 @@ class _sizeWidget extends StatelessWidget {
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(50),
                             color: Colors.white),
-                        child: Icon(
+                        child: const Icon(
                           Icons.remove,
                           color: Colors.blue,
                         ),
                       ),
-                      Column(
+                      const Column(
                         children: [
                           Text(
                             '12 шт',
@@ -165,14 +166,14 @@ class _sizeWidget extends StatelessWidget {
                               color: Colors.blue,
                             ),
                           ),
-                          Text('15 600 P'),
+                          Text('15 600 ₽'),
                         ],
                       ),
                       Container(
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(50),
                             color: Colors.white),
-                        child: Icon(
+                        child: const Icon(
                           Icons.add,
                           color: Colors.blue,
                         ),

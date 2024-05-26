@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:neobis_flutter_figma/widgets/detail_page/bottom_widget.dart';
 import 'package:neobis_flutter_figma/widgets/detail_page/chip_button.dart';
 import 'package:neobis_flutter_figma/widgets/detail_page/detail_card.dart';
@@ -18,7 +16,7 @@ class _DetailPageState extends State<DetailPage> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
               Row(
@@ -29,26 +27,26 @@ class _DetailPageState extends State<DetailPage> {
                           Navigator.pop(context);
                         });
                       },
-                      child: Icon(Icons.arrow_back_ios)),
-                  SizedBox(
+                      child: const Icon(Icons.arrow_back_ios)),
+                  const SizedBox(
                     width: 70,
                   ),
-                  Text(
+                  const Text(
                     'Указать количество',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              ChipButton(),
-              DetailCard(),
-              SizedBox(
+              const ChipButton(),
+              const DetailCard(),
+              const SizedBox(
                 height: 130,
               ),
-              Divider(),
-              BottomWidget()
+              const Divider(),
+              const BottomWidget()
             ],
           ),
         ),

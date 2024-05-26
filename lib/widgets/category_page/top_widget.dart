@@ -14,7 +14,7 @@ class _TopWidgetState extends State<TopWidget> {
       padding: const EdgeInsets.all(8.0),
       child: Column(
         children: [
-          Row(
+          const Row(
             children: [
               Icon(Icons.arrow_back_ios),
               SizedBox(
@@ -26,12 +26,12 @@ class _TopWidgetState extends State<TopWidget> {
               )
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           TextField(
             decoration: InputDecoration(
-              prefixIcon: Icon(Icons.search),
+              prefixIcon: const Icon(Icons.search),
               hintText: 'Поиск',
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.0),

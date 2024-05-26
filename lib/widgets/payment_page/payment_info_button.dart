@@ -35,7 +35,7 @@ class PaymentInfoButton extends StatelessWidget {
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
               ),
               Text(
-                '100 400 Р',
+                '100 400 ₽',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
               )
             ],
@@ -70,7 +70,7 @@ class PaymentInfoButton extends StatelessWidget {
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
               ),
               Text(
-                '100 402 Р',
+                '100 402 ₽',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
               )
             ],

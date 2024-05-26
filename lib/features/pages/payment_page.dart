@@ -18,8 +18,8 @@ class _PaymentPageState extends State<PaymentPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(15),
+            const Padding(
+              padding: EdgeInsets.all(15),
               child: Row(
                 children: [
                   Icon(Icons.arrow_back_ios),
@@ -33,36 +33,36 @@ class _PaymentPageState extends State<PaymentPage> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            TextFieldButton(
+            const TextFieldButton(
               text: 'Имя покупателя',
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
-            TextFieldButton(
+            const TextFieldButton(
               text: '+ 996 (000) 000 000',
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
-            TextFieldButton(
+            const TextFieldButton(
               text: 'Сумма',
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Container(
+            SizedBox(
               width: 343,
               height: 60,
               child: Padding(
-                padding: EdgeInsets.only(left: 7),
+                padding: const EdgeInsets.only(left: 7),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       'Продать в долг',
                       style:
                           TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
@@ -79,26 +79,26 @@ class _PaymentPageState extends State<PaymentPage> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 120,
             ),
-            Divider(),
-            PaymentInfoButton(),
-            SizedBox(
+            const Divider(),
+            const PaymentInfoButton(),
+            const SizedBox(
               height: 20,
             ),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     minimumSize: const Size(343, 56),
-                    backgroundColor: Color(0xff8897AE),
+                    backgroundColor: const Color(0xff8897AE),
                     padding: const EdgeInsets.symmetric(
                         horizontal: 25, vertical: 15),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10))),
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   'Продать',
-                  style: const TextStyle(
+                  style: TextStyle(
                       color: Color(0xffFFFFFF),
                       fontSize: 16,
                       fontWeight: FontWeight.w600),

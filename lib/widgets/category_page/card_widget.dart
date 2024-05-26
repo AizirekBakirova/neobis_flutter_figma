@@ -16,32 +16,11 @@ class CardWidget extends StatelessWidget {
             );
           }),
     );
-    // SingleChildScrollView(
-    //   child: Column(
-    //     children: [
-    //       ProductCard(
-    //         image: 'assets/tshirt.jpg',
-    //       ),
-    //       ProductCard(
-    //         image: 'assets/tshirt2.webp',
-    //       ),
-    //       ProductCard(
-    //         image: 'assets/tshirt3.jpeg',
-    //       ),
-    //       ProductCard(
-    //         image: 'assets/tshirt4.avif',
-    //       ),
-    //       ProductCard(
-    //         image: 'assets/tshirt5.avif',
-    //       ),
-    //     ],
-    //   ),
-    // );
   }
 }
 
 class ProductCard extends StatefulWidget {
-  ProductCard({
+  const ProductCard({
     super.key,
     required this.image,
   });
@@ -64,7 +43,7 @@ class _ProductCardState extends State<ProductCard> {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => DetailPage(),
+              builder: (context) => const DetailPage(),
             ),
           );
         });
@@ -109,12 +88,12 @@ class _ProductCardState extends State<ProductCard> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           'Off-white, Футболка из рельефной ткани',
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.w600),
                         ),
-                        SizedBox(height: 5),
+                        const SizedBox(height: 5),
                         Row(
                           children: [
                             Container(
@@ -122,38 +101,38 @@ class _ProductCardState extends State<ProductCard> {
                               height: 8,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(5),
-                                  color: Color(0xff1DB469)),
+                                  color: const Color(0xff1DB469)),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
-                            Text('500 ₽',
+                            const Text('500 ₽',
                                 style: TextStyle(
                                     fontSize: 16, fontWeight: FontWeight.w400)),
-                            SizedBox(width: 10),
+                            const SizedBox(width: 10),
                             Container(
                               width: 8,
                               height: 8,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(5),
-                                  color: Color(0xff7F56F8)),
+                                  color: const Color(0xff7F56F8)),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
-                            Text('1 200 ₽',
+                            const Text('1 200 ₽',
                                 style: TextStyle(
                                     fontSize: 16, fontWeight: FontWeight.w400)),
-                            SizedBox(width: 80),
-                            Text(
+                            const SizedBox(width: 80),
+                            const Text(
                               '54шт',
                               style: TextStyle(
                                   fontSize: 16, fontWeight: FontWeight.w700),
                             ),
                           ],
                         ),
-                        SizedBox(height: 10),
-                        Row(
+                        const SizedBox(height: 10),
+                        const Row(
                           children: [
                             Icon(Icons.deblur),
                             Text('Склад',
