@@ -80,7 +80,7 @@ class _PaymentPageState extends State<PaymentPage> {
               ),
             ),
             const SizedBox(
-              height: 120,
+              height: 80,
             ),
             const Divider(),
             const PaymentInfoButton(),
