@@ -95,6 +95,7 @@ class _ProductCardState extends State<ProductCard> {
                         ),
                         const SizedBox(height: 5),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Container(
                               width: 8,
@@ -133,6 +134,7 @@ class _ProductCardState extends State<ProductCard> {
                         ),
                         const SizedBox(height: 10),
                         const Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Icon(Icons.deblur),
                             Text('Склад',

@@ -41,9 +41,12 @@ class _DetailPageState extends State<DetailPage> {
                 height: 20,
               ),
               const ChipButton(),
+              const SizedBox(
+                height: 10,
+              ),
               const DetailCard(),
               const SizedBox(
-                height: 130,
+                height: 110,
               ),
               const Divider(),
               const BottomWidget()
